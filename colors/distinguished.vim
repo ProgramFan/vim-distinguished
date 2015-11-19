@@ -37,14 +37,14 @@
 "	   | Highlight group                |  CTFG |  CTBG |    CTAttributes | || |   GUIFG |    GUIBG |   GUIAttributes |
 "	   |--------------------------------|-------|-------|-----------------| || |---------|----------|-----------------|
 call s:ColorDictParser({
-	\   'Normal'                      : [    231,     16,               '',      'ffffff',  '000000',               '']
+	\   'Normal'                      : [    231,     16,               '',      'c6c6c6',  '000000',               '']
 	\ , 'Visual'                      : [    240,    253,               '',      '585858',  'dadada',               '']
 	\
 	\ , 'Cursor'                      : [     '',     '',               '',      'ffffff',  'dd4010',               '']
 	\ , 'lCursor'                     : [     '',     '',               '',      'ffffff',  '89b6e2',               '']
 	\
 	\ , 'CursorLine'                  : [     '',    236,               '',            '',  '3a3a3a',               '']
-	\ , 'CursorLineNr'                : [    231,    240,               '',      'ffffff',  '585858',               '']
+	\ , 'CursorLineNr'                : [    231,    240,               '',            '',  '3a3a3a',               '']
 	\ , 'CursorColumn'                : [    231,    237,               '',      'ffffff',  '3a3a3a',               '']
 	\
 	\ , 'Folded'                      : [    249,    234,               '',      'b2b2b2',  '1c1c1c',               '']
@@ -99,7 +99,7 @@ call s:ColorDictParser({
 	\ , 'PreCondit'                   : [    173,     '',               '',      'd7875f',        '',               '']
 	\ , 'Keyword'                     : [    173,     '',               '',      'd7875f',        '',               '']
 	\ , 'Search'                      : [    231,    131,               '',      '000000',  'ffff5f', 'underline,bold']
-	\ , 'Title'                       : [    231,     '',               '',      'ffffff',        '',               '']
+	\ , 'Title'                       : [      4,     '',           'bold',      'ffffff',        '',               '']
 	\ , 'Delimiter'                   : [    246,     '',               '',      '949494',        '',               '']
 	\ , 'StorageClass'                : [    187,     '',               '',      'd7d7af',        '',               '']
 	\ , 'Operator'                    : [    180,     '',               '',      'd7af87',        '',               '']
@@ -166,7 +166,7 @@ call s:ColorDictParser({
 	\ , 'diffLine'                    : [     68,     '',           'bold',      '5f87d7',        '',           'bold']
 	\ , 'diffFile'                    : [    242,     '',               '',      '6c6c6c',        '',               '']
 	\ , 'diffNewFile'                 : [    242,     '',               '',      '6c6c6c',        '',               '']
-\ })
+    \})
 
 hi link htmlTag            xmlTag
 hi link htmlTagName        xmlTagName
@@ -179,3 +179,9 @@ hi link phpDocParam        vimCommentTitle
 hi link diffAdded          DiffAdd
 hi link diffChanged        DiffChange
 hi link diffRemoved        DiffDelete
+
+hi link htmlH3             htmlH2
+hi link htmlH4             htmlH2
+hi link htmlH5             htmlH2
+hi link htmlH6             htmlH2
+
