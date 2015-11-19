@@ -40,17 +40,17 @@ call s:ColorDictParser({
 	\   'Normal'                      : [    251,     16,               '',      'c6c6c6',  '000000',               '']
 	\ , 'Visual'                      : [    240,    253,               '',      '585858',  'dadada',               '']
 	\
-	\ , 'Cursor'                      : [     '',     '',               '',      'ffffff',  'dd4010',               '']
+	\ , 'Cursor'                      : [     '',     '',               '',            '',  '767676',               '']
 	\ , 'lCursor'                     : [     '',     '',               '',      'ffffff',  '89b6e2',               '']
 	\
-	\ , 'CursorLine'                  : [     '',    236,               '',            '',  '3a3a3a',               '']
-	\ , 'CursorLineNr'                : [    231,    240,               '',            '',  '3a3a3a',               '']
+	\ , 'CursorLine'                  : [     '',    233,               '',            '',  '121212',               '']
+	\ , 'CursorLineNr'                : [    253,    238,               '',      'dadada',  '444444',               '']
 	\ , 'CursorColumn'                : [    231,    237,               '',      'ffffff',  '3a3a3a',               '']
 	\
 	\ , 'Folded'                      : [    249,    234,               '',      'b2b2b2',  '1c1c1c',               '']
 	\ , 'FoldColumn'                  : [    243,    234,               '',      '767676',  '1c1c1c',               '']
 	\ , 'SignColumn'                  : [    231,    233,           'bold',      'ffffff',  '121212',           'bold']
-	\ , 'ColorColumn'                 : [      '',   233,               '',            '',  '262626',               '']
+	\ , 'ColorColumn'                 : [      '',   237,               '',            '',  '3a3a3a',               '']
 	\
 	\ , 'StatusLine'                  : [    231,    236,           'bold',      'ffffff',  '303030',           'bold']
 	\ , 'StatusLineNC'                : [    244,    232,               '',      '808080',  '080808',               '']
@@ -72,8 +72,8 @@ call s:ColorDictParser({
 	\ , 'vimCommentTitle'             : [    250,    233,               '',      'bcbcbc',  '121212',               '']
 	\ , 'vimCommentString'            : [    245,    233,               '',      '8a8a8a',  '121212',               '']
 	\
-	\ , 'TabLine'                     : [    231,    238,               '',      'ffffff',  '444444',               '']
-	\ , 'TabLineSel'                  : [    255,     '',           'bold',      'eeeeee',        '',           'bold']
+	\ , 'TabLine'                     : [    250,    238,               '',      'cccccc',  '444444',               '']
+	\ , 'TabLineSel'                  : [    255,     '',           'bold',      'ffffff',        '',           'bold']
 	\ , 'TabLineFill'                 : [    240,    238,               '',      '585858',  '444444',               '']
 	\ , 'TabLineNumber'               : [    160,    238,           'bold',      'd70000',  '444444',           'bold']
 	\ , 'TabLineClose'                : [    245,    238,           'bold',      '8a8a8a',  '444444',           'bold']
@@ -88,8 +88,8 @@ call s:ColorDictParser({
 	\ , 'Special'                     : [    150,     '',               '',      'afd787',        '',               '']
 	\ , 'Identifier'                  : [     66,     '',           'bold',      '5f8787',        '',           'bold']
 	\ , 'Statement'                   : [    186,     '',           'bold',      'd7d787',        '',           'bold']
-	\ , 'PreProc'                     : [    247,     '',               '',      '9e9e9e',        '',               '']
-	\ , 'Type'                        : [     67,     '',           'bold',      '5f87af',        '',           'bold']
+	\ , 'PreProc'                     : [    173,     '',               '',      'df875f',        '',               '']
+	\ , 'Type'                        : [     73,     '',           'bold',      '5fafaf',        '',           'bold']
 	\ , 'String'                      : [    143,     '',               '',      'afaf5f',        '',               '']
 	\ , 'Number'                      : [    173,     '',               '',      'd7875f',        '',               '']
 	\ , 'Define'                      : [    173,     '',               '',      'd7875f',        '',               '']
@@ -166,7 +166,14 @@ call s:ColorDictParser({
 	\ , 'diffLine'                    : [     68,     '',           'bold',      '5f87d7',        '',           'bold']
 	\ , 'diffFile'                    : [    242,     '',               '',      '6c6c6c',        '',               '']
 	\ , 'diffNewFile'                 : [    242,     '',               '',      '6c6c6c',        '',               '']
-    \})
+	\
+	\ , 'markdownH1'                  : [    118,     '',           'bold',      '87ff00',        '',           'bold']
+	\ , 'markdownH2'                  : [    172,     '',           'bold',      'df8700',        '',           'bold']
+	\ , 'markdownH3'                  : [    231,     '',           'bold',      'ffffff',        '',           'bold']
+	\ , 'markdownCode'                : [    143,     '',               '',      'afaf5f',        '',               '']
+	\ , 'markdownLinkText'            : [    87,      '',               '',      '5fffff',        '',               '']
+	\ , 'markdownUrl'                 : [    208,     '',      'underline',      'ff8700',        '',      'underline']
+\ })
 
 hi link htmlTag            xmlTag
 hi link htmlTagName        xmlTagName
@@ -184,4 +191,3 @@ hi link htmlH3             htmlH2
 hi link htmlH4             htmlH2
 hi link htmlH5             htmlH2
 hi link htmlH6             htmlH2
-
